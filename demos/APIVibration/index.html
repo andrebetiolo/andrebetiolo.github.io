@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang='pt-br'>
+	<head>
+		<title>André Betiolo - Blog</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<link rel='stylesheet' type='text/css' href='style.php'/>
+		<style type="text/css"></style>
+	</head>
+
+	<script type="text/javascript">
+		function vibrarDespositivo(){
+			navigator.vibrate(10000);
+		}
+
+		function vibrarComIntervalo(){
+			navigator.vibrate([500, 1000, 1500]);
+		}
+
+		function PararDeVibrar(){
+			navigator.vibrate(0);
+		}
+	</script>
+
+	<body>
+		<button onclick="vibrarDespositivo()">Vibrar</button>
+		<button onclick="vibrarComIntervalo()">Vibrar com intervalo</button>
+		<button onclick="PararDeVibrar()">Parar de vibrar</button>
+	</body>
+</html>
