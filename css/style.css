@@ -1,8 +1,11 @@
-.container-cards, footer {
+.container-cards {
   padding: 1rem; }
 
 .container-links .btn {
   margin: 0.5rem; }
+
+footer {
+  padding: 0.5rem; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -158,13 +161,8 @@ body {
 .container-links .btn {
   font-size: 1.5rem; }
 
-.container-links i, .github {
-  color: #FFF;
-  fill: #FFF; }
-
-.github {
-  min-width: 18px;
-  margin-right: 1px; }
+.container-links i {
+  color: #FFF; }
 
 .subtitulo {
   font-size: 2rem; }
@@ -181,3 +179,9 @@ footer {
 .ligar {
   margin-left: 0.5rem;
   width: 80px; }
+
+@media (min-width: 1024px) {
+  footer {
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important; } }

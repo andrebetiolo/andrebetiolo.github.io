@@ -19,14 +19,8 @@ body{
   font-size: 1.5rem;
 }
 
-.container-links i, .github{
+.container-links i{
   color: #FFF;
-  fill: #FFF;
-}
-
-.github{
-  min-width: 18px;
-  margin-right: 1px;
 }
 
 .subtitulo{
@@ -51,7 +45,7 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  @extend %padding;
+  @extend %half-padding;
   background: rgba(0, 0, 0, 0.5);
 
   & a{
@@ -62,4 +56,12 @@ footer{
 .ligar{
   margin-left: $half-distancia;
   width: 80px;
+}
+
+@media #{$desktop}{
+  footer{
+    -webkit-flex-direction: row !important;
+  	-ms-flex-direction: row !important;
+  	flex-direction: row !important;
+  }
 }
