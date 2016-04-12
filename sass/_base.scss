@@ -1,0 +1,63 @@
+// Váriaveis
+$cor-padrao: #42A5F5;
+$distancia: 1rem;
+$half-distancia: $distancia/2;
+$tamanho-borda: 4px;
+$mobile: "(max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+//Magins
+@mixin margin{
+	margin: $distancia
+}
+
+@mixin margin-($lado){
+	margin-#{$lado}: $distancia;
+}
+
+//Animation
+@mixin animation($animation){
+	-webkit-animation: $animation $animate-duration;
+	-moz-animation: $animation $animate-duration;
+	-ms-animation: $animation $animate-duration;
+	animation: $animation $animate-duration;
+}
+
+//Padding
+@mixin padding{
+	padding: $distancia;
+}
+
+@mixin padding-($lado){
+	padding-#{$lado}: $distancia;
+}
+
+//Placeholders---
+%margin{
+	margin: $distancia;
+}
+
+%padding{
+	padding: $distancia;
+}
+
+%half-margin{
+	margin: $half-distancia;
+}
+
+%half-padding{
+	padding: $half-distancia;
+}
+
+%box-shadow{
+	webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+%pointer{
+	cursor: pointer;
+}
+
+%width100{
+	width: 100%;
+}

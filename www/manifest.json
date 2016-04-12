@@ -1,0 +1,14 @@
+{
+  "start_url": "/index.html?webapp=1",
+  "short_name": "André Betiolo",
+  "name": "André Betiolo",
+  "icons": [
+    {
+      "src": "/img/icone192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "display": "fullscreen",
+  "orientation": "any"
+}
