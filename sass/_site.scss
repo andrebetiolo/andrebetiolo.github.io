@@ -9,6 +9,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+main{
+  @extend %half-padding;
+}
+
 .titulo{
   @extend .efeito-texto;
   font-family: 'Pacifico', cursive;
