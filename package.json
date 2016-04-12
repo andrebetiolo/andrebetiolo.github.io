@@ -1,0 +1,28 @@
+{
+  "name": "andrebetiolo",
+  "version": "0.0.1",
+  "description": "Site do André Betiolo",
+  "main": "server.js",
+  "scripts": {
+    "setup": "npm install -g bower browser-sync connect-history-api-fallback express node-sass",
+    "sass": "node-sass -w sass/ -o css",
+    "browser-sync": "browser-sync start --server www --files 'www/**'",
+    "dev": "node dev.js & npm run sass",
+    "deploy": "git add . && git commit -am \"$mensagem\" && git push bitbucket master",
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "andrebetiolo"
+  ],
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.1",
+    "connect-history-api-fallback": "^1.1.0",
+    "express": "^4.13.4",
+    "node-sass": "^3.4.2"
+  },
+  "author": "André Betiolo",
+  "license": "MIT",
+  "dependencies": {}
+}
