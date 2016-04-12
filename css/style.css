@@ -173,4 +173,10 @@ body {
   max-width: 310px; }
 
 footer {
+  position: fixed;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.5); }
+
+.ligar {
+  margin-left: 0.5rem;
+  width: 80px; }
