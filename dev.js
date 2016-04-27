@@ -3,7 +3,7 @@ var historyApiFallback = require('connect-history-api-fallback');
 var path = "www";
 
 browserSync.init({
-		port: process.env.PORT || 3030,
+		port: process.env.PORT || 3011,
 		server: {
 			//baseDir: path,
       middleware: [historyApiFallback()]
