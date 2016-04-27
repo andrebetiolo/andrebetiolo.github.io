@@ -1,3 +1,11 @@
+if ('serviceWorker' in navigator){
+  navigator.serviceWorker.register('js/service-worker-cache.js').then(function() {
+    console.log('CLIENT: service worker registration complete.');
+  }, function() {
+    console.log('CLIENT: service worker registration failure.');
+  });
+}
+
 function salvaEventoNoAnalytics(categoria, acao, label){
 	categoria = categoria || 'evento';
 	acao = acao || 'acao';

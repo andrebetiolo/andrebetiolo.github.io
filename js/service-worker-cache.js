@@ -1,31 +1,23 @@
 var arquivosOffLine = [
   '/',
-	'/js/pushbots-chrome.js',
 	//CSS
-	'/bower_components/materialize/dist/css/materialize.min.css',
-	'/bower_components/angular-loading-bar/build/loading-bar.min.css',
+  '/bower_components/materialize/dist/css/materialize.min.css',
+  '/bower_components/materialize/dist/css/materialize.min.css',
+  //IMG
+  '/img/eucatur.jpg',
+  '/img/dia-do-bit.jpg',
 	'/css/style.css',
 	//JS
+	'/js/pushbots-chrome.js',
 	'/bower_components/angular/angular.min.js',
 	'/bower_components/angular-route/angular-route.min.js',
-	'/bower_components/angular-messages/angular-messages.min.js',
-	'/bower_components/angular-animate/angular-animate.min.js',
 	'/bower_components/jquery/dist/jquery.min.js',
 	'/bower_components/materialize/dist/js/materialize.min.js',
-	'/bower_components/angular-loading-bar/build/loading-bar.min.js',
-	'/bower_components/angular-mask/dist/ngMask.min.js',
-	'/jquery-ui/jquery-ui.min.js',
-	'/js/class/Cookie.js',
-	'/js/class/Storage.js',
-	'/js/class/Seccionamento.js',
-	'/js/app.js',
-	//views e partials
-	'/partials/_consulta.html',
-	'/partials/_carrinho-de-compras.html',
-	'/partials/_descricao-endereco.html'
+	'/bower_components/trianglify/dist/trianglify.min.js',
+	'/js/app.js'
 ];
 
-var versao = 'v3';
+var versao = 'v0';
 
 self.addEventListener('install', function installer(event){
   event.waitUntil(
@@ -42,8 +34,6 @@ self.addEventListener('activate', function activator(event){
     caches.keys().then(function(keys){
       return Promise.all(keys
         .filter(function(key){
-					console.log(key);
-          console.log(key.indexOf(versao));
           return key.indexOf(versao)!== 0;
         })
         .map(function(key){

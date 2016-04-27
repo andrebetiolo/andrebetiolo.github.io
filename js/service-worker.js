@@ -20,7 +20,7 @@ self.addEventListener('push', function(event) {
 
 				var title = 'André Betiolo';
 				var body = data.m;
-				var icon = '../img/icone.svg?' + uri;
+				var icon = '../img/icone.png?' + uri;
 				var tag = 'pushbotstag';
 
 				return self.registration.showNotification(title, {
