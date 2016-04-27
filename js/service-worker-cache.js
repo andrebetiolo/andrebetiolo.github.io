@@ -17,7 +17,7 @@ var arquivosOffLine = [
 	'/js/app.js'
 ];
 
-var versao = 'v0';
+var versao = 'v1';
 
 self.addEventListener('install', function installer(event){
   event.waitUntil(
