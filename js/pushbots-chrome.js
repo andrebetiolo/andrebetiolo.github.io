@@ -1,7 +1,7 @@
 	//Service worker file name
 	var serviceWorkerFile = '/js/service-worker.js',
 		logging = true,
-		application_id = "55ba3bf8177959d93f8b4567",
+		application_id = "5720b10b4a9efa42168b4568",
 		pushbots_url = "https://api.pushbots.com/";
 
 	// Once the service worker is registered set the initial state
