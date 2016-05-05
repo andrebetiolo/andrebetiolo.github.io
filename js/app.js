@@ -1,8 +1,8 @@
 if ('serviceWorker' in navigator){
-  navigator.serviceWorker.register('js/service-worker-cache.js').then(function() {
+  navigator.serviceWorker.register('/js/service-worker-cache.js').then(function() {
     console.log('CLIENT: service worker registration complete.');
-  }, function() {
-    console.log('CLIENT: service worker registration failure.');
+  },function(err){
+    console.log('CLIENT: service worker registration failure.', err);
   });
 }
 
@@ -60,8 +60,9 @@ function loader(arrayName){
 	};
 }
 
-app.config(['$routeProvider', '$controllerProvider', '$httpProvider', '$locationProvider', function($routeProvider, $controllerProvider, $httpProvider, $locationProvider){
+app.config(['$routeProvider', '$controllerProvider', '$httpProvider', '$locationProvider', '$compileProvider', function($routeProvider, $controllerProvider, $httpProvider, $locationProvider, $compileProvider){
   $locationProvider.html5Mode(true);
+  $compileProvider.debugInfoEnabled(false);
 }]);
 
 app.run(function($http, $location, $rootScope, $q){
