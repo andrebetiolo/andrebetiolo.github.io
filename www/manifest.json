@@ -1,12 +1,14 @@
 {
   "start_url": "/index.html?webapp=1",
-  "short_name": "André Betiolo",
   "name": "André Betiolo",
+  "short_name": "André Betiolo",
+  "theme_color": "#42A5F5",
+  "background_color": "#ECEFF1",
   "icons": [
     {
-      "src": "/img/icone.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
+      "src": "/img/icone.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "display": "fullscreen",
